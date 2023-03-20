@@ -1,0 +1,16 @@
+{
+  "name": "package-json-template",
+  "version": "1.0.0",
+  "description": "pratica da aula de node e package.json",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "pratica1": "node ./pratica1.js",
+    "retornaBrasil": "node ./pratica1.js Brazil",
+    "retornarPaisesQueComecamComB": "node ./pratica2.js b",
+    "adicionarNovoPais": "node ./pratica3.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
