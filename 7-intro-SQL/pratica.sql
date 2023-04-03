@@ -29,4 +29,37 @@ UPDATE books
 
 --Deletar uma linha
 
-DELETE FROM books WHERE id = "8503012928"
+DELETE FROM books WHERE id = "8503012928";
+
+
+--CRIAR TABELA
+CREATE TABLE tarefas(
+    id TEXT PRIMARY KEY UNIQUE NOT NULL,
+    tarefa TEXT NOT NULL,
+    no_tempo TEXT NOT NULL,
+    completo INTEGER NOT NULL
+);
+
+--EXCLUIR TABELA
+DROP TABLE tarefas;
+
+
+--MOSTRAR TABELA
+SELECT * FROM tarefas;
+
+
+-- POPULAR TABELA
+INSERT INTO tarefas(id, tarefa, no_tempo, completo)
+    VALUES 
+        ("0", "Completar projeto", "1 semana", 0),
+        ("1", "Completar projeto Front", "2 semanas", 1),
+        ("2", "Ir ao dentista", "3 semana", 0);
+
+--ATUALIZAR UM ITEM DE UMA LINHA DA TABELA
+UPDATE tarefas
+    SET completo = 1
+    WHERE id = "0";
+
+--DELETAR UMA LINHA DA TABELA
+DELETE FROM tarefas
+    WHERE id = "0";
